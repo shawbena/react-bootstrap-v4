@@ -1,0 +1,53 @@
+.fade-enter,
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+}
+
+.fade-enter-done {
+  z-index: 1;
+  position: relative;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  position: absolute;
+  width: 100%;
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.loading {
+    bottom: 0px;
+    display: block;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  animation: loading 10s ease infinite;
+  background-image: linear-gradient(125deg, #fff, #f3f3f3 41%, #ededed 0, #fff);
+  background-size: 300% 300%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

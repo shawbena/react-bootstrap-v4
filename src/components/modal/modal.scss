@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/variables";
+
+.modal{
+    position: fixed;
+    z-index: $zindex-modal;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0l
+    &_hidden{
+        visibility: hidden
+    }
+}

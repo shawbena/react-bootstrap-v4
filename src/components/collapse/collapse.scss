@@ -1,0 +1,7 @@
+.collapse__wrapper {
+  height: 0;
+  overflow: hidden;
+  &.collapse__entered {
+    height: auto;
+  }
+}
